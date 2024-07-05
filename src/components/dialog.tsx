@@ -15,7 +15,13 @@ export function AlertDialogDemo() {
     return (
         <AlertDialog>
             <AlertDialogTrigger asChild>
-                <Button variant="outline" className="text-gray-800 mg">Show Dialog</Button>
+                <Button
+                    variant="outline"
+                    className="text-gray-800 
+                    sm: h-9 rounded-md px-3
+                     lg: h-11 rounded-md px-8 ml-2">
+                    Show Dialog
+                </Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
                 <AlertDialogHeader>
@@ -30,6 +36,6 @@ export function AlertDialogDemo() {
                     <AlertDialogAction>Continue</AlertDialogAction>
                 </AlertDialogFooter>
             </AlertDialogContent>
-        </AlertDialog>
+        </AlertDialog >
     )
 }
